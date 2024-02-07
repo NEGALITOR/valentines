@@ -7,6 +7,10 @@ block content
 	video#background-video(autoplay, loop, muted)
 		source(src="/videos/background.mp4", type="video/mp4")
 
+	script.
+		let song = document.getElementById("background-music");
+		song.volume = 0.2;
+
 	div(id='divQ' class='center')
 		h1= "Will you be my valentine?"
 	div(id='divBtns' class='center-right')

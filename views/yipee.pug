@@ -2,4 +2,11 @@ extends layout
 
 block content
 
-	h1= "hello"
+	audio#background-music(autoplay, loop)
+		source(src="/music/milk-bar.mp3", type="audio/mp3")
+
+	div(class='center')
+		img(src="/images/link-dance.gif" width='400' height='400')
+
+	div(id='divQ' class='center')
+		h1= "I knew you would say Yes!"
