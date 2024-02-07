@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+	audio#background-music(autoplay, loop)
+		source(src="/music/Song of Ancients.mp3", type="audio/mp3")
+	video#background-video(autoplay, loop, muted)
+		source(src="/videos/background.mp4", type="video/mp4")
+
+	div(id='divQ' class='center')
+		h1= "Will you be my valentine?"
+	div(id='divBtns' class='center-right')
+		div(class='left')
+			form(action="/yipee" method="get")
+				button(type='submit' id='yesBtn' class='btn') Yes
+		button(type='button' id='noBtn' class='btn' href='#') No
+	
+	div(class='center')
+		img(src="/images/happy-valentines.gif" width='400' height='400' class='bottom')
+	
+	
+	
+	script(src="/javascripts/main.js")
+  
